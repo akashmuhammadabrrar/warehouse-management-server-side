@@ -37,6 +37,10 @@ app.get('/', (req, res) => {
     res.send('Running Node server')
 });
 
+app.get('/hreoku', (req, res) => {
+    res.send('Heroku updated')
+})
+
 app.listen(port, () => {
     console.log('server running with mongodb')
 })
